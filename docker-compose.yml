@@ -31,6 +31,7 @@ services:
     environment:
       - "ELASTICSEARCH_HOSTS=http://elasticsearch:9200"
       - "XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=0123456789ABCDEF0123456789ABCDEF"
+      - "xpack.security.enabled: false"
     networks:
       - elk-network
 

@@ -3,3 +3,14 @@
 {"timestamp": "2023-11-15T11:00:00", "level": "info", "message": "API request received", "endpoint": "/api/users", "method": "GET", "user": "admin"}
 {"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "guest"}
 {"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp": "2023-11-15T11:05:00", "level": "warn", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp": "2023-11-15T11:05:00", "level": "error", "message": "Deprecated API version", "endpoint": "/api/v1/data", "method": "GET", "user": "Cvelasquez"}
+{"timestamp":"2023-11-15T11:05:00","level":"error","message":"Deprecated API version","endpoint":"/api/v1/data","method":"GET","user":"Cvelasquez"}
+{"timestamp":"2023-11-15T11:05:00","level":"error","message":"Deprecated API version","endpoint":"/api/v1/data","method":"GET","user":"Cvelasquez"}
