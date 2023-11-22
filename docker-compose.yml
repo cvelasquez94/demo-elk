@@ -1,0 +1,40 @@
+version: '3'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.15.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+    networks:
+      - elk-network
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.15.0
+    container_name: logstash
+    volumes:
+      - ./logstash-config:/usr/share/logstash/pipeline/
+      - ./log-data:/usr/share/logstash/log-data/
+    command: logstash -f /usr/share/logstash/pipeline/logstash.conf
+    environment:
+      - "ES_HOST=elasticsearch"
+      - "ES_PORT=9200"
+    networks:
+      - elk-network
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.15.0
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - "ELASTICSEARCH_HOSTS=http://elasticsearch:9200"
+      - "XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=0123456789ABCDEF0123456789ABCDEF"
+    networks:
+      - elk-network
+
+networks:
+  elk-network:
+    driver: bridge
+    
